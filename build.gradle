@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+// 这里有必要说明一下,后面的zhaojun1217是我个人的github名,改成你自己的
+group = 'com.github.bigNewBird'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
