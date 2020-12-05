@@ -1,7 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-// 这里有必要说明一下,后面的zhaojun1217是我个人的github名,改成你自己的
-group = 'com.github.bigNewBird'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -25,10 +22,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile fileTree(dir: "libs", include: ["*.jar"])
+    compile 'androidx.appcompat:appcompat:1.2.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'androidx.test.ext:junit:1.1.2'
+    testCompile 'androidx.test.espresso:espresso-core:3.3.0'
 
 }
